@@ -4,10 +4,10 @@
         <title>HelloRepos</title>
     </head>
     <body>
-        Received message : ${hellomsg}
+    Received message : <span th:text="${hellomsg}">HELLO_MSG_HERE</span>
 
         <p>
-            Click <a href="person">here</a> to add a new person in the database!
+            Click <a th:href="@{person}">here</a> to add a new person in the database!
         </p>
     </body>
 </html>
